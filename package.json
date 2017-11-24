@@ -1,0 +1,14 @@
+{
+  "name": "aula_24_11",
+  "version": "1.0.0",
+  "description": "Aula de express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joao Mesquita",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
