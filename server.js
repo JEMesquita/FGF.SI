@@ -26,3 +26,18 @@ const User = sequelize.define('contatos',{
     
 });
 
+User.sync({force: false})
+.then(() => {
+    return User.create({
+        nome: 'João',
+        telefone: '12345678',
+        email: 'esmerino@aluno.fgf.edu.br',
+        tipo: 'faculdade'
+    });
+});
+
+User.findAll()
+.then(users =>{
+    console.log(users)
+})
+
