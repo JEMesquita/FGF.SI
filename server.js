@@ -9,3 +9,20 @@ sequelize.authenticate()
 .catch(err => {
     console.error('não foi possivel conectar:', err);
 });
+
+const User = sequelize.define('contatos',{
+    nome: {
+        type: Sequelize.STRING
+    },
+    telefone: {
+        type:Sequelize.STRING
+    },
+    email: {
+        type: Sequelize.STRING
+    },
+    tipo: {
+        type: Sequelize.STRING
+    }
+    
+});
+
